@@ -50,7 +50,7 @@ export default function Home({ items }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('api/productsfraldas');
+  const res = await fetch('https://fraldaseafins-lo8y0pbh3-databenti.vercel.app/api/productsfraldas');
   const json = await res.json();
 
   
