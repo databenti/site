@@ -50,7 +50,7 @@ export default function Home({ items }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/productsfraldas');
+  const res = await fetch('/api/productsfraldas');
   const json = await res.json();
 
   
