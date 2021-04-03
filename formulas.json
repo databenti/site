@@ -1,0 +1,141 @@
+{
+    "status": {
+        "code": 200,
+        "message": "OK"
+    },
+    "result": {
+        "products": [
+            {
+                "id": 42211,
+                "name": "Fórmula Infantil de Seguimento para Lactentes Nestlé Nan Comfor 2 Lata 800g",
+                "measure": {
+                    "quantity": 0.8,
+                    "unit": "Kg"
+                },
+                "price": 44.84,
+                "date": "2021-02-06T19:14:13.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 44874,
+                "name": "Fórmula Infantil para Lactentes Nestlé Nan Supreme 1 Lata 800g",
+                "measure": {
+                    "quantity": 0.8,
+                    "unit": "Kg"
+                },
+                "price": 57.9,
+                "date": "2021-01-14T14:53:15.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17255,
+                "name": "Fórmula Infantil para Lactentes 1 Nestlé Nestogeno Lata 400g",
+                "measure": {
+                    "quantity": 0.4,
+                    "unit": "Kg"
+                },
+                "price": 23.9,
+                "date": "2021-03-28T00:03:46.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17255.jpg",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17256,
+                "name": "Fórmula Infantil para Lactentes 1 Nestlé Nestogeno Lata 800g",
+                "measure": {
+                    "quantity": 0.8,
+                    "unit": "Kg"
+                },
+                "price": 38.98,
+                "date": "2021-04-01T17:43:21.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17256.png",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17267,
+                "name": "Fórmula Infantil para Lactentes Supreme 1 Nestlé Nan Lata 400g",
+                "measure": {
+                    "quantity": 0.4,
+                    "unit": "Kg"
+                },
+                "price": 31.9,
+                "date": "2021-03-22T21:00:17.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17267.jpg",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17268,
+                "name": "Fórmula Infantil de Seguimento para Lactentes Nestlé Nan Supreme 2 Lata 800g",
+                "measure": {
+                    "quantity": 0.8,
+                    "unit": "Kg"
+                },
+                "price": 59.9,
+                "date": "2021-03-06T23:48:39.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17268.jpg",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17262,
+                "name": "Fórmula Infantil para Lactentes Comfor 1 Nestlé Nan Lata 400g",
+                "measure": {
+                    "quantity": 0.4,
+                    "unit": "Kg"
+                },
+                "price": 27.99,
+                "date": "2021-03-30T22:43:34.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17262.jpg",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17274,
+                "name": "Fórmula Infantil de Seguimento para Crianças de Primeira Infância Nestlé Ninho Fases 1+ Lata 400g",
+                "measure": {
+                    "quantity": 0.4,
+                    "unit": "Kg"
+                },
+                "price": 11.99,
+                "date": "2021-03-20T19:21:55.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17274.jpg",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17264,
+                "name": "Fórmula Infantil para Lactentes e Crianças de Primeira Infância Nestlé Nan Comfor 3 Lata 800g",
+                "measure": {
+                    "quantity": 0.8,
+                    "unit": "Kg"
+                },
+                "price": 41.99,
+                "date": "2021-01-22T18:27:29.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17264.jpg",
+                "cat_prod_id": 162
+            },
+            {
+                "id": 17271,
+                "name": "Fórmula Infantil de Seguimento para Lactentes 2 Nestlé Nestogeno Lata 800g",
+                "measure": {
+                    "quantity": 0.8,
+                    "unit": "Kg"
+                },
+                "price": 37.99,
+                "date": "2021-03-31T23:02:41.000+00:00",
+                "ean13": null,
+                "image_url": "http://admin.ehorus.com.br/mediafiles/produtos/17271.jpg",
+                "cat_prod_id": 162
+            }
+        ],
+        "total_count": 0
+    }
+}
