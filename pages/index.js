@@ -6,7 +6,7 @@ function currencyFormat(num) {
   return 'R$ ' + num.toFixed(2).replace('.', ',')
 }
 
-/** @param {import('next').InferGetServerSidePropsType<typeof getServerSideProps> } props */
+
 export default function Home({ items }) {
   moment.locale('pt-br');
   
