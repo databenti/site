@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import moment from 'moment'
-import { shorturl } from '@zodash/shorturl';
+import { Button, Container, Navbar, Nav, NavDropdown, Badge } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function currencyFormat(num) {
   return 'R$ ' + num.toFixed(2).replace('.', ',')
@@ -10,7 +11,7 @@ function currencyFormat(num) {
 
 export default function Home({ items }) {
   moment.locale('pt-br');
-  
+
 
   return (
     <div className={styles.container}>
@@ -26,7 +27,7 @@ export default function Home({ items }) {
         <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -35,8 +36,26 @@ export default function Home({ items }) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-
+      <Container fluid>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="#home">Fraldas & Formulas</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/formulas">Formulas</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/Sobre">Quem somos?</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+      </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      </Container>
       <main className={styles.main}>
+
         <h1 className={styles.title}>
           Fraldas
         </h1>
@@ -44,16 +63,16 @@ export default function Home({ items }) {
         <p className={styles.description}>
           pesquise preços de um jeito facil
         </p>
-        
+
         <div className={styles.grid}>
 
           {items.map(item => (
             <div key={item._id} className={styles.card}>
               <img className={styles.imgcard} src={item.image} width="150" alt="imagem" />
               <h2 className={styles.titlecard}>{item.title}</h2>
-              <p><span className={styles.price}>{currencyFormat(item.price)}</span></p><br />
+              <p><span className={styles.price}><Badge variant="warning">{currencyFormat(item.price)}</Badge></span></p><br />
               <span>Ultima atualização: </span>
-              <p className={styles.updatedata}><span className={styles.data}>{moment(item.lastVisited).format('ll')}</span></p>
+              <p><span className={styles.data}><Badge variant="danger">{moment(item.lastVisited, "YYYYMMDD").fromNow()}</Badge></span></p>
             </div>
           ))}
 
@@ -71,7 +90,7 @@ export async function getServerSideProps() {
   const res = await fetch('https://fraldaseafins-lo8y0pbh3-databenti.vercel.app/api/productsfraldas');
   const json = await res.json();
 
-  
+
 
   return {
     props: {

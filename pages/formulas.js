@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import moment from 'moment'
-import { shorturl } from '@zodash/shorturl';
+import { Button, Container, Navbar, Nav, NavDropdown, Badge } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function currencyFormat(num) {
   return 'R$ ' + num.toFixed(2).replace('.', ',')
@@ -36,6 +37,24 @@ export default function Home({ items }) {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
+      <Container fluid>
+      <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="#home">Fraldas & Fórmulas</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/formulas">Formulas</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/sobre">Quem somos?</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+      </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      </Container>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -52,9 +71,9 @@ export default function Home({ items }) {
             <div key={item._id} className={styles.card}>
               <img className={styles.imgcard} src={item.image} width="150" alt="imagem" />
               <h2 className={styles.titlecard}>{item.title}</h2>
-              <p><span className={styles.price}>{currencyFormat(item.price)}</span></p><br />
+              <p><span><Badge variant="warning">{currencyFormat(item.price)}</Badge></span></p><br />
               <span>Ultima atualização: </span>
-              <p className={styles.updatedata}><span className={styles.data}>{moment(item.lastVisited).format('ll')}</span></p>
+              <p><span><Badge variant="danger">{moment(item.lastVisited, "YYYYMMDD").fromNow()}</Badge></span></p>
         
             </div>
           ))}
