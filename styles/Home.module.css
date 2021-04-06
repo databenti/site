@@ -52,6 +52,11 @@
   font-size: 4rem;
 }
 
+.titlecard {
+  font-family: "Pacifico", cursive;
+  color: #333;
+}
+
 .title,
 .description {
   text-align: center;
