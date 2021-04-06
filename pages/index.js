@@ -16,7 +16,7 @@ export default function Home({ items }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Fraldas & Afins</title>
+        <title>Fraldas & Formulas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

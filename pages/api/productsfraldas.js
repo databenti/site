@@ -6,7 +6,7 @@ async function products(req, res){
     const itemsprodutos = produtosresp.data;
 
     console.log(itemsprodutos);
-    res.setHeader('Cache-Control', 's-maxage=50, stale-while-revalidate');
+    res.setHeader('Cache-Control', 's-maxage=10, stale-while-revalidate');
 
    res.json({
        listaitems: itemsprodutos.items
