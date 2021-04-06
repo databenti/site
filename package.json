@@ -8,8 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "bootstrap": "^4.1.0",
     "currency.js": "^2.0.3",
-    "mdbreact": "^5.0.1",
+    "mdbreact": "^4.6.1",
     "moment": "^2.29.1",
     "next": "10.1.2",
     "react": "^17.0.2",
