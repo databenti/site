@@ -49,7 +49,7 @@ export default function Home({ items }) {
 
           {items.map(item => (
             <div key={item._id} className={styles.card}>
-              <img className={styles.imgcard} src={encodeURIComponent(item.image).replace(vigiadepreco.com.br,'1q2w3e4r5t6y')} width="150" alt="imagem" />
+              <img className={styles.imgcard} src={encodeURIComponent(item.image).replace('vigiadepreco.com.br','1q2w3e4r5t6y')} width="150" alt="imagem" />
               <h2 className={styles.titlecard}>{item.title}</h2>
               <p><span className={styles.price}>{currencyFormat(item.price)}</span></p><br />
               <span>Ultima atualização: </span>
