@@ -50,7 +50,7 @@ export default function Home({ items }) {
 
           {items.map(item => (
             <div key={item._id} className={styles.card}>
-              <img className={styles.imgcard} src={shorturl(item.image)} width="150" alt="imagem" />
+              <img className={styles.imgcard} src={encodeURI(item.image} width="150" alt="imagem" />
               <h2 className={styles.titlecard}>{item.title}</h2>
               <p><span className={styles.price}>{currencyFormat(item.price)}</span></p><br />
               <span>Ultima atualização: </span>
