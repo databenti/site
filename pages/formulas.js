@@ -15,7 +15,7 @@ export default function Home({ items }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Fraldas & Afins</title>
+        <title>Fraldas & Formulas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -33,7 +33,7 @@ export default function Home({ items }) {
           {items.map(item => (
             <div key={item._id} className={styles.card}>
               <img className={styles.imgcard} src={item.image} width="150" alt="imagem" />
-              <h2>{item.title}</h2>
+              <h2 className={styles.titlecard}>{item.title}</h2>
               <p><span>{currencyFormat(item.price)}</span></p><br />
               <span>Ultima atualização: </span>
               <p><span className={styles.data}>{moment(item.updated).format('ll')}</span></p>
