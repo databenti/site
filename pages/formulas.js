@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import moment from 'moment'
+import { shorturl } from '@zodash/shorturl';
 
 function currencyFormat(num) {
   return 'R$ ' + num.toFixed(2).replace('.', ',')
@@ -49,7 +50,7 @@ export default function Home({ items }) {
 
           {items.map(item => (
             <div key={item._id} className={styles.card}>
-              <img className={styles.imgcard} src={item.image} width="150" alt="imagem" />
+              <img className={styles.imgcard} src={shorturl(item.image)} width="150" alt="imagem" />
               <h2 className={styles.titlecard}>{item.title}</h2>
               <p><span className={styles.price}>{currencyFormat(item.price)}</span></p><br />
               <span>Ultima atualização: </span>
