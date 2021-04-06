@@ -2,7 +2,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import moment from 'moment'
 import React from 'react'
-import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, MDBCol, MDBView, MDBIcon } from 'mdbreact';
 
 function currencyFormat(num) {
   return 'R$ ' + num.toFixed(2).replace('.', ',')
@@ -45,7 +44,7 @@ export default function Home({ items }) {
       </main>
 
       <footer className={styles.footer}>
-        Fraldas & Afins
+        Fraldas & Formulas
       </footer>
     </div>
   )
