@@ -8,11 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zodash/shorturl": "^0.2.8",
     "bootstrap": "^4.1.0",
     "currency.js": "^2.0.3",
     "mdbreact": "^4.6.1",
     "moment": "^2.29.1",
     "next": "10.1.2",
+    "node-url-shortener": "^1.1.11",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-select": "^4.3.0",
