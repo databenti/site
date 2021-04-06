@@ -68,12 +68,8 @@
 }
 
 .updatedata {
-  text-decoration: none;
-  padding: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.8rem;
-  transition: background-color 100ms ease-in-out
+  color:darkgray;
+  border-radius: 5px;
 }
 
 .code {
