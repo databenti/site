@@ -53,7 +53,7 @@ export default function Home({ items }) {
               <h2 className={styles.titlecard}>{item.title}</h2>
               <p><span className={styles.price}>{currencyFormat(item.price)}</span></p><br />
               <span>Ultima atualização: </span>
-              <p className={styles.updatedata}><span className={styles.data}>{moment(item.updated).format('ll')}</span></p>
+              <p className={styles.updatedata}><span className={styles.data}>{moment(item.lastVisited).format('ll')}</span></p>
         
             </div>
           ))}
