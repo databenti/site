@@ -35,14 +35,6 @@ export default function Home({ items }) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WSEJT71W5C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WSEJT71W5C');
-</script>
       </Head>
       <Container fluid>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
